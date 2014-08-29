@@ -33,7 +33,31 @@ a {
 
 	font-family:  "Nothing You Could Do", cursive;
 	margin: 0 0 10px 0;
+	display: inline-block;
 
+}
+
+/* clear all */
+
+.clear {
+	height: 20px;
+	width: 20px;
+
+	text-align: center;
+
+	display: inline-block;
+	font-size: 0.8em;
+	background-color: #F0F4F5;
+	color: #A6ABB2;
+	padding: 3px 6px;
+	border: 0;
+	opacity: 0.4;
+	float: right;
+
+}
+
+.clear:hover {
+	opacity: 1;
 }
 
 /* Items */

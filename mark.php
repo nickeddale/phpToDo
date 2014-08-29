@@ -22,7 +22,7 @@ if (isset($_GET['as'], $_GET['item'])) {
 	 					'item' => $item,
 	 					'user' => $_SESSION['user_id']
  					]);
-	 			} catch (Exception $e) {
+	 			} catch (PDOException $e) {
 	 				echo 'ERROR: ' . $e->getMessage();
 	 			}
  			break;
@@ -40,7 +40,7 @@ if (isset($_GET['as'], $_GET['item'])) {
 	 					'item' => $item,
 	 					'user' => $_SESSION['user_id']
  					]);
-	 			} catch (Exception $e) {
+	 			} catch (PDOException $e) {
 	 				echo 'ERROR: ' . $e->getMessage();
 	 			}
  			break;			

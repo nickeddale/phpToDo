@@ -37,7 +37,10 @@ otherwise, serve up an empty array (':' is the otherwise operator)
 </head>
 <body>
 	<div class="list">
-		<h1 class="header">To Do</h1>
+		<div>
+			<h1 class="header">To Do</h1>
+			<a href="clear.php" class="clear">&#8635;</a>
+		</div>
 
 		<?php if (!empty($items)): ?>
 		<ul class="items">
@@ -49,14 +52,12 @@ otherwise, serve up an empty array (':' is the otherwise operator)
 						<a href="mark.php?as=done&item=<?php echo $item['id']; ?>" class="done-button">&#10003;</a>
 					<?php else: ?>
 						<a href="mark.php?as=undone&item=<?php echo $item['id']; ?>" class="done-button">&#9100;</a>
-									
-			
 					<?php endif;?>	
 				</li>
 			<?php endforeach; ?>	
 		</ul>
 		<?php else: ?>
-			<p>You haven't added any items yet.</p>
+			<p>You haven't anything to do!</p>
 		<?php endif; ?>
 
 		<form class="item-add" action="add.php" method="post">
