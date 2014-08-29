@@ -1,0 +1,95 @@
+body {
+	background-color: #F8FBFF;
+}
+
+body, input {
+
+	font: 1em "Roboto", sans-serif;
+	color: #A6ABB2;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed #A6ABB2
+}
+
+/* list */
+
+.list {
+	background-color: #fff;
+	margin: 20px auto; /* 20 pixel at top and  bottom, auto left and right */
+	width: 100%;
+	max-width: 500px;
+	padding:20px;
+
+	box-sizing:border box;/*  changes the box model so that padding doesn't increase width */
+
+	border-radius: 2px;
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+
+}
+
+.list .header {
+
+	font-family:  "Nothing You Could Do", cursive;
+	margin: 0 0 10px 0;
+
+}
+
+/* Items */
+
+.items {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+}
+
+.items li:hover .done-button{
+	opacity: 1;
+
+}
+
+.items .item.done {
+	text-decoration: line-through;
+}
+
+.items li, 
+.item-add .input{
+	border: 0;
+	border-bottom: 1px dashed #ccc;
+	padding: 15px 0;
+
+}
+
+.input {
+	width: 100%;
+}
+
+.input:focus {
+	outline: none;
+}
+
+/* done button */
+
+.done-button {
+	display: inline-block;
+	font-size: 0.8em;
+	background-color: #d9dfe1;
+	color: #A6ABB2;
+	padding: 3px 6px;
+	border: 0;
+	opacity: 0.4;
+
+}
+
+/* submit button */
+
+.submit {
+	background-color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	margin-top: 10px;
+	box-shadow: 3px 3px 0 #ddd;
+}
