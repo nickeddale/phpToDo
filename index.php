@@ -46,7 +46,11 @@ otherwise, serve up an empty array (':' is the otherwise operator)
 				<li class="item">
 					<span class="item<?php echo $item['done'] ? ' done' : '';?>"><?php echo $item['name'];?></span>
 					<?php if(!$item['done']):?>
-						<a href="mark.php?as=done&item=<?php echo $item['id']; ?>" class="done-button">Mark as done</a>
+						<a href="mark.php?as=done&item=<?php echo $item['id']; ?>" class="done-button">&#10003;</a>
+					<?php else: ?>
+						<a href="mark.php?as=undone&item=<?php echo $item['id']; ?>" class="done-button">&#9100;</a>
+									
+			
 					<?php endif;?>	
 				</li>
 			<?php endforeach; ?>	
